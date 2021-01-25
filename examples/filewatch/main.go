@@ -14,7 +14,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/gorilla/websocket"
+	"github.com/yimtcode/websocket"
 )
 
 const (
