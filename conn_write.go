@@ -13,3 +13,8 @@ func (c *Conn) writeBufs(bufs ...[]byte) error {
 	_, err := b.WriteTo(c.conn)
 	return err
 }
+
+// Write skip websocket layer direct writes data to the connection.
+func (c *Conn)Write(data []byte) (n int, err error)  {
+	return c.conn.Write(data)
+}
